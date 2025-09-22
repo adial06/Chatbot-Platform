@@ -13,33 +13,16 @@ It allows users to register, log in, create projects, and interact with a chatbo
 - Secure environment configuration with .env
 
 
-
-## Project Structure
-Chatbot Platform/
-│── package.json
-│── .env
-│── README.md
-│── server.js
-│── src/
-├── routes/
-│ └── auth.js
-├── controllers/
-│ └── authController.js
-├── models/
-│ └── db.js
-
-
-
 ## Setup Instructions
 
 ## 1.Install Dependencies
 
-## bash
+bash
 npm install
 
 ## 2.Configure environment variables
 
-## Create a .env file in the root:
+Create a .env file in the root:
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
