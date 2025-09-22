@@ -84,7 +84,7 @@ expected response:
 }
 
 
-## 5. Create Project,prompt,chat with project
+## 6. Create Project,prompt,chat with project
 Project:
 
 POST http://localhost:5000/api/projects
