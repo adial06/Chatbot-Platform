@@ -67,13 +67,19 @@ expected response:
 
 ## 5. Create Project,prompt,chat with project
 Project:
+
 POST http://localhost:5000/api/projects
+
 JSON: { "name": "My Bot", "description": "Handles queries" }
 
 Prompt:
+
 POST http://localhost:5000/api/projects/1/prompts
+
 JSON: { "prompt_text": "Be helpful" }
 
 Chat:
+
 POST http://localhost:5000/api/projects/1/chat
+
 JSON: { "message": "Hello" }
