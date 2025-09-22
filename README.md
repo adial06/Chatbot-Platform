@@ -39,13 +39,22 @@ node server.js
 
 ## 5.Test the endpoints on postman
 Register Endpoint:
+
 POST http://localhost:5000/auth/register
 
 
 json 
-{"name": "xyz","email": "name@example.com","password": "mypassword"}
+
+{"name": "xyz",
+
+"email": "name@example.com",
+
+"password": "mypassword"
+
+}
 
 Expected response:
+
 {
   "message": "User registered successfully!"
 }
@@ -55,13 +64,17 @@ Login Endpoint:
 POST http://localhost:5000/auth/login
 
 json
-{"email": "name@example.com","password": "mypassword"}
+{"email": "name@example.com",
+
+"password": "mypassword"}
 
 
 expected response:
 {
   "message": "Login successful!",
+  
   "token": "your_jwt_token_here"
+  
 }
 
 
@@ -70,16 +83,29 @@ Project:
 
 POST http://localhost:5000/api/projects
 
-JSON: { "name": "My Bot", "description": "Handles queries" }
+json
+{ 
+
+"name": "My Bot", 
+
+"description": "Handles queries" 
+
+}
 
 Prompt:
 
 POST http://localhost:5000/api/projects/1/prompts
 
-JSON: { "prompt_text": "Be helpful" }
+json
+{ 
+"prompt_text": "Be helpful" 
+}
 
 Chat:
 
 POST http://localhost:5000/api/projects/1/chat
 
-JSON: { "message": "Hello" }
+json
+{ 
+"message": "Hello" 
+}
