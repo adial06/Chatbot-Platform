@@ -45,7 +45,9 @@ POST http://localhost:5000/auth/register
 
 json 
 
-{"name": "xyz",
+{
+
+"name": "xyz",
 
 "email": "name@example.com",
 
@@ -64,9 +66,13 @@ Login Endpoint:
 POST http://localhost:5000/auth/login
 
 json
-{"email": "name@example.com",
+{
 
-"password": "mypassword"}
+"email": "name@example.com",
+
+"password": "mypassword"
+
+}
 
 
 expected response:
@@ -98,7 +104,9 @@ POST http://localhost:5000/api/projects/1/prompts
 
 json
 { 
+
 "prompt_text": "Be helpful" 
+
 }
 
 Chat:
@@ -107,5 +115,7 @@ POST http://localhost:5000/api/projects/1/chat
 
 json
 { 
+
 "message": "Hello" 
+
 }
