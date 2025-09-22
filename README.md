@@ -41,13 +41,9 @@ node server.js
 Register Endpoint:
 POST http://localhost:5000/auth/register
 
-Body → raw → JSON:
+
 json 
-{
-  "name": "Aditi",
-  "email": "aditi@example.com",
-  "password": "mypassword"
-}
+{"name": "xyz","email": "name@example.com","password": "mypassword"}
 
 Expected response:
 {
@@ -59,10 +55,7 @@ Login Endpoint:
 POST http://localhost:5000/auth/login
 
 json
-{
-  "email": "aditi@example.com",
-  "password": "mypassword"
-}
+{"email": "name@example.com","password": "mypassword"}
 
 
 expected response:
@@ -72,3 +65,15 @@ expected response:
 }
 
 
+## 5. Create Project,prompt,chat with project
+Project:
+POST http://localhost:5000/api/projects
+JSON: { "name": "My Bot", "description": "Handles queries" }
+
+Prompt:
+POST http://localhost:5000/api/projects/1/prompts
+JSON: { "prompt_text": "Be helpful" }
+
+Chat:
+POST http://localhost:5000/api/projects/1/chat
+JSON: { "message": "Hello" }
